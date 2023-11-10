@@ -1,0 +1,16 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+}
+
+.middle{
+    border: solid 2px red;
+    padding:10px;
+
+}
+
+@media (max-width: 720px) {
+    .main-container{
+      grid-template-columns: auto;
+  }
+  }

@@ -1,0 +1,56 @@
+
+
+
+<div class="main-container">
+   <div class="left"></div>
+   <div class="middle">
+
+    <ng-container *ngFor="let item of moodArray">
+        <div class="card">
+        
+        <div >
+            <p class="name">{{item.person}}</p>
+            <span>{{item.remarks}}</span> <br>
+            <span class="timestamp">{{item.timestamp | date: 'hh:mm a dd MMM yy'}}</span>
+        </div>
+        <div >
+            <p class="emoji" (click)="openDialog()">{{emojiArray[item.mood]}}</p>
+        </div>
+         
+        </div>
+    </ng-container>
+
+    <!-- <button >yo</button> -->
+     
+<!-- 
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Mood</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+    <ng-container *ngFor="let item of moodArray">
+    
+                <tr>
+                    <td>{{item.person}}</td>
+                    <td>{{emojiArray[item.mood]}}</td>
+                </tr>
+           
+    
+    </ng-container>
+    
+    </tbody>
+    </table> -->
+
+    <br><hr><br>
+
+    <label for="personID">User ID - {{userID}}</label> &nbsp;
+    <button (click)="logout()">Logout</button>
+
+
+   </div>
+   <div class="right"></div>
+</div>

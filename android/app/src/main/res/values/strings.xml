@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">mood meter</string>
+    <string name="title_activity_main">mood meter</string>
+    <string name="package_name">com.moodMeter.app</string>
+    <string name="custom_url_scheme">com.moodMeter.app</string>
+</resources>

@@ -1,0 +1,19 @@
+<div class="e-main-container">
+    <p class="header-emotion-dialog-box">Select Emotion</p>
+
+    <div class="btn-container">
+
+        <ng-container *ngFor="let item of emojiArray; let i = index">
+            <button class="emoji-select-btn" (click)="onBtnClick(i)">{{item}}</button>
+        </ng-container>
+
+    </div>
+
+    <div class="lower-half">
+        <p>Selected Emoji : {{selectedEmoji}}</p>
+        <p>Add Remarks</p>
+        <input type="text" name="remarks" id="remarks" [(ngModel)]="userRemarks" placeholder="remarks"> &nbsp;
+        <button (click)="saveStatus()">Save Status</button>
+    </div>
+    
+</div>
